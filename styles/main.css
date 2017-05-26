@@ -1,0 +1,246 @@
+* {
+	box-sizing: border-box;
+}
+
+.active {
+	color: rgb(191, 189, 144);
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+	display: block;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+.authenticate-container {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+form.authenticate, form.authenticate table {
+	width: 400px;
+}
+
+form table th span {
+	position: relative;
+	bottom: 5px
+}
+
+input.full-width {
+	width: 100%;
+}
+
+textarea {
+	margin: 0;
+	resize: vertical;
+}
+select {
+	-webkit-appearance:none;
+	padding-right: 25px;
+	background-image:
+		linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 15px) calc(.7em + 2px),
+		calc(100% - 10px) calc(.7em + 2px),
+		calc(100% - 2.5em) 0.5em;
+	background-size:
+		5px 5px,
+		5px 5px,
+		0 0;
+	background-repeat: no-repeat;
+}
+
+.alert, .success, .info {
+	padding-left: 15px
+}
+
+.alert {
+	border-left: 3px solid rgb(222, 32, 95);
+}
+
+.success {
+	border-left: 3px solid rgb(144, 222, 32);
+}
+
+.info {
+	border-left: 3px solid rgb(32, 165, 222);
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	left: 20px;
+	width: calc(100% - 40px);
+	height: 60px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #C9C9C9;
+}
+
+ul.inline li{display: inline-block; margin-right: 20px; float: left;}
+ul.inline li:last-child{margin-right: 0;}
+ul.inline {padding-left: 0;}
+
+ul.rate, ul.post-options {
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+main {margin-top: 100px;}
+
+.logo {
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	font-style: italic;
+}
+
+.sort {
+	width: 300px;
+	margin: 0 auto;
+}
+
+label {
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+  padding: .5em 0;
+  border-radius: 3px;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #4A4A4A;
+}
+
+.sort a {
+	width: 49%;
+	padding: 10px;
+	text-align: center;
+	display: inline-block;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+.sort a:hover {
+	border-bottom: 0px;
+}
+
+.sort a:hover span {
+	color: #c9c9c9 !important;
+	border-bottom: 2px solid #c9c9c9;
+}
+
+.sort a.active {
+	background-color: #4A4A4A;
+	border-radius: 5px;
+}
+
+.sort a.active span {
+	color: white;
+}
+
+.arrow-line {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.side-line {
+	 display: inline-block;
+	 border-top: 1px solid #C9C9C9;
+	 width: 47%;
+}
+
+.triangle {
+	 display: inline-block;
+	 height: 10px;
+	 width: 10px;
+	 transform: rotate(225deg);
+	 transform-origin: center center;
+	 border-top: 1px solid #C9C9C9;
+	 border-left: 1px solid #C9C9C9;
+	 margin-left: -3px;
+	 margin-right: -3px;
+	 margin-bottom: -5px;
+}
+
+footer {
+	margin-top: 2em;
+	position: absolute;
+	/*font-variant: small-caps;
+	text-transform: lowercase;*/
+	left: 20px;
+	width: calc(100vw - 40px);
+	height: 60px;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	border-top: 1px solid #C9C9C9;
+}
+
+/*input.search {
+	width: 99.5%;
+	margin-bottom: 1em;
+}*/
+
+form.search input[type="text"] {
+	font-variant: small-caps;
+	text-transform: lowercase;
+	font-family: serif;
+	background-color: transparent;
+	width: 54px;
+	border-radius: 0px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+}
+
+form.search input[type="text"]:focus {
+	background-color: #C9C9C9;
+	color: #222222;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	text-align: center;
+	margin-right: -20px;
+	padding: 0 20px;
+}
+
+form.search input[type="text"]:focus:hover {
+	color: #222222;
+	border-bottom: 0px;
+}
+
+form.search input[type="text"]:hover {
+	color: #c9c9c9;
+	border-bottom: 2px solid #c9c9c9; 	
+}
+
+form.search input[type='submit'] {
+	display: none;
+}
